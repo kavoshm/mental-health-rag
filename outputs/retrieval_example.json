@@ -1,0 +1,88 @@
+{
+  "query": "client with PTSD symptoms including nightmares and hypervigilance",
+  "top_k": 5,
+  "filters": null,
+  "results": [
+    {
+      "chunk_id": "session_008_chunk_001",
+      "text": "Client reported increased nightmares this week, occurring 5 out of 7 nights. The nightmares involve reliving the IED explosion that killed two members of his unit. Client described hypervigilance that has worsened, particularly in crowded places like the grocery store. He reported an incident where a car backfiring caused him to drop to the ground in a parking lot.",
+      "metadata": {
+        "source_file": "session_008.txt",
+        "client_id": "CLT-4408",
+        "session_date": "2025-02-24",
+        "session_number": 7,
+        "clinician": "Dr. Navarro, PsyD",
+        "session_type": "Individual Therapy — PTSD/Military Trauma",
+        "chunk_index": 1,
+        "total_chunks": 5
+      },
+      "similarity_score": 0.9234
+    },
+    {
+      "chunk_id": "session_008_chunk_002",
+      "text": "We began prolonged exposure therapy with an imaginal exposure to the index trauma. Client's SUDS peaked at 85 during the exposure and decreased to 55 by the end of the 20-minute exercise. Post-exposure processing revealed significant survivor guilt — client stated 'I should have been the one who died, not them.' Client denied current suicidal ideation but endorsed that survivor guilt sometimes makes him question the value of his life.",
+      "metadata": {
+        "source_file": "session_008.txt",
+        "client_id": "CLT-4408",
+        "session_date": "2025-02-24",
+        "session_number": 7,
+        "clinician": "Dr. Navarro, PsyD",
+        "session_type": "Individual Therapy — PTSD/Military Trauma",
+        "chunk_index": 2,
+        "total_chunks": 5
+      },
+      "similarity_score": 0.8456
+    },
+    {
+      "chunk_id": "session_006_chunk_001",
+      "text": "Client is processing trauma from sexual assault using Cognitive Processing Therapy. Impact statement read in session revealed stuck points: 'I cannot trust my own judgment,' 'I am dirty and broken,' and 'The assault was my fault because I invited him in.' Client presented as shaky with chest tightness but tolerated the exposure well.",
+      "metadata": {
+        "source_file": "session_006.txt",
+        "client_id": "CLT-4406",
+        "session_date": "2025-02-10",
+        "session_number": 5,
+        "clinician": "Dr. Navarro, PsyD",
+        "session_type": "Individual Therapy — Trauma Processing (CPT)",
+        "chunk_index": 1,
+        "total_chunks": 4
+      },
+      "similarity_score": 0.7892
+    },
+    {
+      "chunk_id": "session_006_chunk_003",
+      "text": "Sleep is still rough — client wakes up from nightmares about once a week, down from almost nightly. The prazosin is helping. No self-harm thoughts reported. Homework assigned: write an alternative version of impact statement challenging the stuck points discussed in session.",
+      "metadata": {
+        "source_file": "session_006.txt",
+        "client_id": "CLT-4406",
+        "session_date": "2025-02-10",
+        "session_number": 5,
+        "clinician": "Dr. Navarro, PsyD",
+        "session_type": "Individual Therapy — Trauma Processing (CPT)",
+        "chunk_index": 3,
+        "total_chunks": 4
+      },
+      "similarity_score": 0.7234
+    },
+    {
+      "chunk_id": "session_008_chunk_003",
+      "text": "Client took his daughter to the park this weekend. He was hypervigilant the whole time — scanning the perimeter, jumped when a kid popped a balloon. But he stayed and did not leave. The drinking is down to two beers a night, no hard liquor in three weeks. Client is using exercise as alternative coping — did thirty pushups when he wanted to pour a whiskey.",
+      "metadata": {
+        "source_file": "session_008.txt",
+        "client_id": "CLT-4408",
+        "session_date": "2025-02-24",
+        "session_number": 7,
+        "clinician": "Dr. Navarro, PsyD",
+        "session_type": "Individual Therapy — PTSD/Military Trauma",
+        "chunk_index": 3,
+        "total_chunks": 5
+      },
+      "similarity_score": 0.7012
+    }
+  ],
+  "metadata": {
+    "collection_size": 52,
+    "embedding_model": "text-embedding-3-small",
+    "similarity_metric": "cosine",
+    "query_time_ms": 45
+  }
+}

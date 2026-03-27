@@ -1,0 +1,81 @@
+{
+  "session_id": "session_001",
+  "client_id": "CLT-4401",
+  "session_date": "2025-01-06",
+  "session_number": 1,
+  "clinician": "Dr. Navarro, PsyD",
+  "presenting_problem": "Client presents for intake assessment with a 4-month history of depressive symptoms including anhedonia, hypersomnia, appetite changes with 15-pound weight gain, and concentration difficulties. Onset followed being passed over for a promotion after 11 years at the company.",
+  "mood_indicators": [
+    "Reported persistent low mood and loss of interest in previously enjoyed activities",
+    "Hypersomnia (10-11 hours with continued fatigue)",
+    "Appetite dysregulation with binge eating and 15-pound weight gain",
+    "Concentration difficulties noted at work",
+    "PHQ-9 score: 19 (moderately severe depression)",
+    "AUDIT score: elevated (specific score to be documented)"
+  ],
+  "key_themes": [
+    "Loss and disappointment related to career (promotion denial)",
+    "Self-worth tied to professional achievement",
+    "Passive suicidal ideation without plan or intent",
+    "Increased alcohol use as coping mechanism",
+    "Feelings of being a burden to family"
+  ],
+  "therapeutic_interventions": [
+    "Comprehensive intake assessment",
+    "PHQ-9 and AUDIT screening administration",
+    "Safety assessment and safety planning",
+    "Psychoeducation about depression and treatment options",
+    "Discussion of firearms access and safety"
+  ],
+  "client_progress": "Initial session — baseline assessment. Client demonstrates insight into his symptoms and is motivated by his wife's encouragement to seek treatment. Willingness to try medication is a positive indicator for engagement.",
+  "homework_assigned": [
+    "No specific homework assigned (intake session)",
+    "Follow up with psychiatrist referral for medication evaluation"
+  ],
+  "risk_assessment": {
+    "level": "low",
+    "factors": [
+      "Passive suicidal ideation ('they'd be better off without me')",
+      "Feelings of worthlessness and being a burden",
+      "Increased alcohol use (4-5 beers nightly, up from 1-2)",
+      "Access to firearms (hunting rifle in a safe)"
+    ],
+    "protective_factors": [
+      "Denies suicidal plan or intent",
+      "No history of suicide attempts",
+      "Strong family connection (two children, supportive wife)",
+      "Engaged in treatment voluntarily",
+      "Safety plan completed in session"
+    ],
+    "recommended_actions": [
+      "Monitor suicidal ideation at each session",
+      "Maintain updated safety plan",
+      "Address firearms safety (discuss temporary transfer to third party)",
+      "Monitor alcohol use — AUDIT follow-up",
+      "Document risk and protective factors each session"
+    ]
+  },
+  "recommended_followup": [
+    "Weekly individual therapy sessions (behavioral activation + cognitive therapy)",
+    "Psychiatry referral for medication evaluation (SSRI consideration)",
+    "Detailed alcohol use assessment in next session",
+    "Revisit safety plan and firearms access discussion",
+    "Consider involving wife in safety plan as a support"
+  ],
+  "similar_sessions": [
+    {
+      "session_id": "session_005",
+      "client_id": "CLT-4405",
+      "similarity_score": 0.7823,
+      "relevant_excerpt": "Client reports relapse on methamphetamine after 23 days clean. Trigger was a phone call from ex-wife about custody. Experienced fear, shame, and anger. Reports increased substance use as coping mechanism for emotional distress.",
+      "relevance_reason": "Both clients demonstrate substance use escalation as a maladaptive coping response to emotionally triggering life events. Parallel pattern of self-worth tied to external roles (provider/parent)."
+    },
+    {
+      "session_id": "session_009",
+      "client_id": "CLT-4409",
+      "similarity_score": 0.7156,
+      "relevant_excerpt": "Client experiencing adjustment disorder following job loss. Concealing the loss from wife due to shame about provider role failure. Presenting with sleep disruption, stress-related chest pains, and elevated blood pressure.",
+      "relevance_reason": "Similar theme of professional identity disruption leading to depressive symptoms. Both clients tie self-worth to career performance and experience shame-driven isolation."
+    }
+  ]
+}

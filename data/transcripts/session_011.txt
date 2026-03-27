@@ -1,0 +1,63 @@
+SESSION METADATA
+Date: 2025-03-17
+Session Number: 3
+Client ID: CLT-4410
+Clinician: Dr. Navarro, PsyD
+Session Type: Individual Therapy — OCD (ERP)
+Duration: 50 minutes
+
+---
+
+TRANSCRIPT
+
+Therapist: How did the exposure homework go this week?
+
+Client: I did the hand-washing one. I touched the doorknob at work and then waited fifteen minutes before washing my hands. I did it three times this week.
+
+Therapist: And the last time we discussed this, your target was ten minutes. You exceeded it. What was the experience like?
+
+Client: Excruciating. The first five minutes my brain was screaming at me that I was going to get contaminated, that I'd get sick, that I'd bring germs home to my kids. My SUDS was probably 85. But then around minute eight or nine, something shifted. It started to come down. By minute fifteen, I was maybe at 50.
+
+Therapist: That pattern — the initial spike followed by a natural decrease — is called habituation, and it's the mechanism that makes ERP work. Your brain learns that the feared consequence (getting sick, contaminating your kids) doesn't happen, and the anxiety signal gradually weakens. The more you repeat the exposure, the lower the peak gets and the faster the habituation occurs. Did you notice any difference between the first attempt and the third?
+
+Client: Actually, yes. The third time, my peak SUDS was more like 70 instead of 85, and it came down to around 40. So it is getting easier. But the thoughts are still there.
+
+Therapist: The thoughts may always be there to some degree — that's the nature of OCD. The goal isn't to eliminate the intrusive thoughts but to change your response to them. Right now, when the thought "my hands are contaminated" shows up, you believe it requires immediate action. We're training your brain to recognize it as just a thought — uncomfortable but not an emergency.
+
+Client: My wife has been really supportive. She stopped enabling the reassurance-seeking. I used to ask her ten times a day "Do you think I'm sick? Do my hands look clean enough? Should I wash again?" and she'd answer. Now she says "That sounds like an OCD question, and I love you, but I'm not going to answer it."
+
+Therapist: That's exactly the right approach, and it must be hard for both of you. How do you feel when she doesn't reassure you?
+
+Client: Initially terrible. Like she doesn't care. But then I ride it out and the urge passes. And honestly, I'm asking less. Maybe three or four times a day now instead of ten.
+
+Therapist: That's a 60-70% reduction in reassurance-seeking. That's significant. Let's talk about the next step on your exposure hierarchy. The doorknob exposure is going well. The next item is eating lunch without washing your hands first. How does that feel on a scale of 0 to 100?
+
+Client: Probably a 90. The idea of eating with "contaminated" hands makes my skin crawl. I know intellectually that most people don't wash their hands before every meal and they're fine. But my brain won't accept that.
+
+Therapist: That's exactly the gap we're working to close — the gap between intellectual knowing and felt belief. The only way to close it is through experience. Are you willing to try it this week?
+
+Client: Can we start with something like eating a snack? Like a granola bar? That feels slightly less threatening than a full meal.
+
+Therapist: Absolutely. Titrating the difficulty is exactly how ERP should work. You don't need to jump to the hardest thing — we build up gradually. So the assignment this week is: touch a doorknob, wait fifteen minutes, then eat a granola bar without washing. Can you try it at least twice?
+
+Client: I'll try. The thought of it makes me anxious right now, which I guess is normal.
+
+Therapist: The anticipatory anxiety is often worse than the actual experience. Your track record shows that — every exposure you've done has been more manageable than you predicted. Let me check in on the other OCD domains. How is the checking behavior?
+
+Client: The stove checking is down from eight times to three times before leaving the house. Still more than zero, but I've set a rule: I check once, take a photo of the knobs, and then leave. The photo is my "one check" and I look at it when the urge to go back hits.
+
+Therapist: The photo strategy is clever — it externalizes the checking so you're not relying on memory, which OCD loves to distort. Are you finding you need to look at the photo less?
+
+Client: Yeah, some days I take the photo and never look at it. It's just knowing it's there that helps.
+
+Therapist: That's the safety behavior evolving — eventually we'll work on not taking the photo at all, but for now, it's a reasonable intermediate step. Any new obsessional themes popping up?
+
+Client: I had a brief spike of harm OCD last week — an intrusive thought about hurting my son while giving him a bath. It terrified me and I had to leave the room. My wife finished the bath.
+
+Therapist: Harm OCD intrusions are distressing, but I want to normalize something: the fact that the thought terrifies you is evidence that it's ego-dystonic — it goes against everything you want and value. People who are genuinely at risk of harming others don't feel horrified by the thought. Your horror is actually your moral compass working. Did the thought persist?
+
+Client: It came back once more the next day, but less intense. I told myself "this is an OCD thought, not a wish" and it faded.
+
+Therapist: That's a textbook response — labeling the thought, not engaging with it, letting it pass. You're developing real skill at this. Keep working on the exposures this week, and we'll review in our next session.
+
+Client: Thanks, doc. This is the hardest thing I've ever done, but it's working.

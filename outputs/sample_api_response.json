@@ -1,0 +1,73 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/summarize",
+    "body": {
+      "transcript": "[Full session_002.txt transcript — 3,200 characters]",
+      "client_id": "CLT-4402",
+      "include_similar": true
+    }
+  },
+  "response": {
+    "status_code": 200,
+    "body": {
+      "session_id": "session_002",
+      "client_id": "CLT-4402",
+      "session_date": "2025-01-13",
+      "session_number": 4,
+      "clinician": "Dr. Navarro, PsyD",
+      "presenting_problem": "Fourth CBT session for panic disorder. Client continues thought journal work, successfully interrupted a panic cycle in a grocery store using cognitive techniques learned in therapy.",
+      "mood_indicators": [
+        "Panic attack frequency decreased from daily to 3-4 per week",
+        "Client described feeling 'empowered' after interrupting panic cycle",
+        "Terror intensity rated 9/10 during highway panic, reduced later",
+        "Belief in alternative thoughts: 30% in-moment, 80% post-event"
+      ],
+      "key_themes": [
+        "Cognitive restructuring of catastrophic health anxiety",
+        "Gap between in-moment fear and post-event rational evaluation",
+        "Avoidance behavior (highway driving) maintaining anxiety",
+        "Emerging self-efficacy in managing panic symptoms"
+      ],
+      "therapeutic_interventions": [
+        "Thought journal review and analysis",
+        "Cognitive restructuring (automatic thought identification and challenging)",
+        "Diaphragmatic breathing (client-initiated during episode)",
+        "Planning for exposure hierarchy (driving situations)"
+      ],
+      "client_progress": "Meaningful improvement in 4 sessions. Panic frequency reduced from daily to 3-4/week. Client successfully used cognitive restructuring mid-panic for the first time (grocery store incident). Avoidance behavior (highway) persists and will be addressed next via graded exposure.",
+      "homework_assigned": [
+        "Continue thought journal with added element: rate believability of alternative thought at time of event and again one hour later",
+        "Track panic frequency for the week"
+      ],
+      "risk_assessment": {
+        "level": "none",
+        "factors": [],
+        "protective_factors": [
+          "Engaged in treatment",
+          "Supportive husband",
+          "Demonstrating skill acquisition",
+          "No reported risk indicators"
+        ],
+        "recommended_actions": [
+          "Continue routine monitoring"
+        ]
+      },
+      "recommended_followup": [
+        "Begin exposure hierarchy for driving situations next session",
+        "Start with low-anxiety driving exposures (parking lot, short local drives)",
+        "Continue CBT thought challenging work",
+        "Reassess GAD-7 at session 6 to measure progress"
+      ],
+      "similar_sessions": [
+        {
+          "session_id": "session_010",
+          "client_id": "CLT-4402",
+          "similarity_score": 0.8912,
+          "relevant_excerpt": "Follow-up session for panic disorder. Client has been practicing interoceptive exposure exercises as homework. Reports successfully completing 3 of 5 assigned exposures. Panic frequency decreased from 4/week to 1/week. GAD-7 improved from 18 to 11.",
+          "relevance_reason": "Later session for the same client showing continued progress trajectory — from 3-4 attacks/week (session 4) to 1/week (session 12), validating the CBT approach."
+        }
+      ]
+    }
+  }
+}
