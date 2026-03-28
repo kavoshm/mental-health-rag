@@ -1,5 +1,7 @@
 # Mental Health Session Summary RAG
 
+[![CI](https://github.com/monfaredkavosh/mental-health-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/monfaredkavosh/mental-health-rag/actions/workflows/ci.yml)
+
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11+-3776ab?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-0.4+-FF6F00?style=flat-square)
@@ -13,6 +15,34 @@ A Retrieval-Augmented Generation (RAG) pipeline that ingests therapy session tra
 ## Architecture
 
 ![RAG Architecture](docs/images/rag_architecture.png)
+
+```mermaid
+flowchart TD
+    A["Therapy Transcripts\n(12 synthetic sessions)"] --> B["Dialogue-Aware Chunking\n(1200 char, speaker-turn splits)"]
+    B --> C["OpenAI Embeddings\ntext-embedding-3-small"]
+    C --> D[("ChromaDB\nVector Store\n(cosine similarity)")]
+
+    subgraph "FastAPI Endpoints"
+        E["POST /summarize"]
+        F["GET /sessions"]
+        G["GET /health"]
+    end
+
+    E --> H["Top-K Retrieval\n+ metadata filtering"]
+    H --> D
+    D --> H
+    H --> I["Risk Assessment\n(keyword + LLM)"]
+    I --> J["GPT-4o-mini Summarizer\n(anti-hallucination prompts)"]
+    J --> K["Pydantic SessionSummary\n(structured JSON response)"]
+
+    style A fill:#e3f2fd,stroke:#1565c0
+    style D fill:#fff3e0,stroke:#e65100
+    style K fill:#e8f5e9,stroke:#2e7d32
+    style I fill:#ffebee,stroke:#c62828
+    style E fill:#e0f2f1,stroke:#00695c
+    style F fill:#e0f2f1,stroke:#00695c
+    style G fill:#e0f2f1,stroke:#00695c
+```
 
 The pipeline follows six stages:
 
@@ -421,3 +451,55 @@ The pipeline's five risk levels correspond to C-SSRS severity categories as foll
 - **Structured output changes the game** -- forcing the LLM to produce Pydantic-validated JSON eliminated an entire class of integration bugs. The schema acts as both documentation and constraint.
 - **Embedding quality matters more than quantity** -- `text-embedding-3-small` with 52 well-chunked documents outperformed naive approaches with more data but worse chunking. The dialogue-aware splitting was the key differentiator.
 - **FastAPI + Pydantic is a natural fit for LLM applications** -- the same models that validate LLM output also define the API contract, creating a single source of truth from ingestion through to the REST response.
+
+---
+
+## Docker
+
+### Build the Image
+
+```bash
+docker build -t mental-health-rag .
+```
+
+### Run with Docker
+
+```bash
+# Start the API server (template-based summaries, no API key needed)
+docker run -p 8000:8000 mental-health-rag
+
+# Start with OpenAI API for LLM-powered summarization and embeddings
+docker run -p 8000:8000 -e OPENAI_API_KEY=sk-your-key-here mental-health-rag
+```
+
+Access the API docs at [http://localhost:8000/docs](http://localhost:8000/docs) and the health check at [http://localhost:8000/health](http://localhost:8000/health).
+
+### Run with Docker Compose
+
+```bash
+# Set your API key (optional)
+export OPENAI_API_KEY=sk-your-key-here
+
+# Build and start
+docker compose up --build
+
+# Run in detached mode
+docker compose up -d
+
+# Stop
+docker compose down
+```
+
+ChromaDB data is persisted in a named Docker volume (`chroma-data`) so the vector store survives container restarts.
+
+### Ingest Transcripts Inside the Container
+
+```bash
+# Run the ingest command inside a running container
+docker compose exec api python -m src.main ingest
+
+# Or run as a one-off command
+docker run -e OPENAI_API_KEY=sk-your-key-here \
+    mental-health-rag \
+    python -m src.main ingest
+```

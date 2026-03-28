@@ -1,0 +1,41 @@
+# =============================================================================
+# Mental Health Session Summary RAG — Docker Compose
+# =============================================================================
+# Runs the FastAPI server for the RAG pipeline with therapy session
+# summarization, risk assessment, and similar-session retrieval.
+#
+# Usage:
+#   docker compose up --build          # Build and start the API server
+#   docker compose up -d               # Start in detached mode
+#   docker compose down                # Stop and remove containers
+#
+# API docs at: http://localhost:8000/docs
+# Health check: http://localhost:8000/health
+# =============================================================================
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      # Pass your OpenAI API key for LLM-powered summarization and embeddings.
+      # Without it, the pipeline falls back to template-based summaries and
+      # ChromaDB default embeddings.
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      # Persist ChromaDB vector store data between container restarts.
+      - chroma-data:/app/chroma_db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  chroma-data:
+    driver: local
